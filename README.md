@@ -1,9 +1,9 @@
 # A Chrome Headless wrapper for Laravel
-[![Build Status](https://img.shields.io/travis/helloiamlukas/laravel-chrome/master.svg?style=flat-square)](https://travis-ci.org/helloiamlukas/chrome-php) [![StyleCI](https://styleci.io/repos/128403303/shield?branch=master)](https://styleci.io/repos/128403303)
+#[![Build Status](https://img.shields.io/travis/helloiamlukas/laravel-chrome/master.svg?style=flat-square)](https://travis-ci.org/helloiamlukas/chrome-php) [![StyleCI](https://styleci.io/repos/128403303/shield?branch=master)](https://styleci.io/repos/128403303)
 
 Get the DOM of any webpage by using headless Chrome.
 
-💡 This is a Laravel wrapper of [helloiamlukas/chrome-php](https://github.com/helloiamlukas/chrome-php).
+💡 This is a Laravel wrapper of [milivojsa/chrome-php](https://github.com/milivojsa/chrome-php).
 
 ## Requirements
 
@@ -23,7 +23,7 @@ sudo chmod -R o+rx /usr/lib/node_modules/puppeteer/.local-chromium
 You can install this package via composer by running:
 
 ```bash
-composer require helloiamlukas/laravel-chrome
+composer require milivojsa/laravel-chrome
 ```
 
 After that, the package will automatically register itself.
@@ -152,7 +152,7 @@ You can specify custom headers which will be used for the request.
 Here is a quick example how to use this package:
 
 ```php
-use ChromeHeadless\ChromeHeadless;
+use ChromeHeadless\Laravel\ChromeHeadless;
 
 $html = ChromeHeadless::url('https://example.com')->getHtml();
 ```
@@ -160,7 +160,7 @@ $html = ChromeHeadless::url('https://example.com')->getHtml();
 Instead of getting the DOM as a string, you can also use the`getDOMCrawler()` method, which will return a `Symfony\Component\DomCrawler\Crawler` instance.
 
 ```php
-use ChromeHeadless\ChromeHeadless;
+use ChromeHeadless\Laravel\ChromeHeadless;
 
 $dom = ChromeHeadless::url('https://example.com')->getDOMCrawler();
     
