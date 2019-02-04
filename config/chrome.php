@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     /*
     |--------------------------------------------------------------------------
     | Chrome Path
@@ -8,8 +9,10 @@ return [
     |
     | Manually set the path where Google Chrome is installed.
     |
-    */
-    'exec_path' => 'google-chrome',
+    */   
+   
+    'exec_path' => null, // 'google-chrome', 'chromium-browser', ...
+
     /*
     |--------------------------------------------------------------------------
     | User Agent
@@ -18,7 +21,9 @@ return [
     | Change the user agent that will be used by Google Chrome.
     |
     */
+   
     'user_agent' => null,
+
     /*
     |--------------------------------------------------------------------------
     | Timeout
@@ -28,7 +33,9 @@ return [
     | (null = no timeout)
     |
     */
+   
     'timeout' => null,
+
     /*
     |--------------------------------------------------------------------------
     | Viewport
@@ -37,7 +44,9 @@ return [
     | Specify a viewport.
     |
     */
+   
     'viewport' => null,
+
     /*
     |--------------------------------------------------------------------------
     | Blacklist
@@ -46,7 +55,9 @@ return [
     | Specify a list of files that should not be loaded.
     |
     */
+   
     'blacklist' => [],
+
     /*
     |--------------------------------------------------------------------------
     | Additional Request Headers
@@ -55,5 +66,7 @@ return [
     | Specify additional headers.
     |
     */
+   
     'headers' => [],
+
 ];
