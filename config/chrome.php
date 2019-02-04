@@ -9,8 +9,8 @@ return [
     |
     | Manually set the path where Google Chrome is installed.
     |
-    */   
-   
+    */
+
     'exec_path' => null, // 'google-chrome', 'chromium-browser', ...
 
     /*
@@ -21,7 +21,7 @@ return [
     | Change the user agent that will be used by Google Chrome.
     |
     */
-   
+
     'user_agent' => null,
 
     /*
@@ -33,7 +33,7 @@ return [
     | (null = no timeout)
     |
     */
-   
+
     'timeout' => null,
 
     /*
@@ -44,7 +44,7 @@ return [
     | Specify a viewport.
     |
     */
-   
+
     'viewport' => null,
 
     /*
@@ -55,7 +55,7 @@ return [
     | Specify a list of files that should not be loaded.
     |
     */
-   
+
     'blacklist' => [],
 
     /*
@@ -66,7 +66,7 @@ return [
     | Specify additional headers.
     |
     */
-   
+
     'headers' => [],
 
 ];
