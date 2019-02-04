@@ -21,6 +21,6 @@ class ChromeHeadlessServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/chrome.php', 'chrome');        
+        $this->mergeConfigFrom(__DIR__.'/../config/chrome.php', 'chrome');
     }
 }
