@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'exec_path' => null, // 'google-chrome', 'chromium-browser', ...
+    'exec_path' => env('CHROME_PATH', null), // 'google-chrome', 'chromium-browser', ...
 
     /*
     |--------------------------------------------------------------------------
