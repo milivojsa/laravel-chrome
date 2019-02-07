@@ -20,6 +20,10 @@ class ChromeHeadless extends ChromeHeadlessPHP
             $this->setBlacklist(config('chrome.blacklist'));
         }
 
+        if (config('chrome.excluded')) {
+            $this->setExcluded(config('chrome.excluded'));
+        }
+
         if (config('chrome.headers')) {
             $this->setHeaders(config('chrome.headers'));
         }

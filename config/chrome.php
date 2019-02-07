@@ -52,11 +52,23 @@ return [
     | Blacklist
     |--------------------------------------------------------------------------
     |
-    | Specify a list of files that should not be loaded.
+    | Specify a list of regular expressions to filter resources.
     |
     */
    
     'blacklist' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Excluded
+    |--------------------------------------------------------------------------
+    |
+    | Specify a list of resource types that should be excluded.
+    | Available types: document, stylesheet, image, media, font and script.
+    |
+    */
+   
+    'excluded' => [],
 
     /*
     |--------------------------------------------------------------------------
