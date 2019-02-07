@@ -67,7 +67,7 @@ return [
     | Available types: document, stylesheet, image, media, font and script.
     |
     */
-   
+
     'excluded' => [],
 
     /*
