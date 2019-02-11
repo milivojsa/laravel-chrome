@@ -1,6 +1,6 @@
 # A Chrome Headless wrapper for Laravel
 
-[![Build Status](https://travis-ci.org/milivojsa/laravel-chrome.svg?branch=master)](https://travis-ci.org/milivojsa/laravel-chrome) [![StyleCI](https://github.styleci.io/repos/168714170/shield?branch=master)](https://github.styleci.io/repos/168714170)
+[![Version](https://img.shields.io/github/tag/milivojsa/laravel-chrome.svg?style=flat)](https://github.com/milivojsa/laravel-chrome) [![Build Status](https://travis-ci.org/milivojsa/laravel-chrome.svg?branch=master)](https://travis-ci.org/milivojsa/laravel-chrome) [![StyleCI](https://github.styleci.io/repos/168714170/shield?branch=master)](https://github.styleci.io/repos/168714170)
 
 Get the DOM of any webpage by using headless Chrome.
 
