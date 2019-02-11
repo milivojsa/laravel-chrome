@@ -13,7 +13,7 @@ class ChromeHeadlessServiceProviderTest extends TestCase
         return [ChromeHeadlessServiceProvider::class];
     }
 
-    /** 
+    /**
      * @test
      */
     public function it_can_set_a_custom_user_agent()
@@ -31,7 +31,7 @@ class ChromeHeadlessServiceProviderTest extends TestCase
         $this->assertContains(json_encode($user_agent), $command);
     }
 
-    /** 
+    /**
      * @test
      */
     public function it_can_set_a_custom_chrome_path()
@@ -45,7 +45,7 @@ class ChromeHeadlessServiceProviderTest extends TestCase
         $command = ChromeHeadless::url('https://example.com')
             ->setChromePath($chrome_path)
             ->createCommand();
-            
+
         $this->assertContains(json_encode($chrome_path), $command);
     }
 }
